@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Password should be at least 4 characters");
         }
 
-        // Email should contain '@'
         let email = document.getElementById('emailInput').value;
         if (!email.includes('@')) {
             isValid = false;
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 city: document.getElementById('city').value,
                 pincode: document.getElementById('PinCodeInput').value,
                 state: document.getElementById('state').value,
-
             };
             console.log(formData);
 
